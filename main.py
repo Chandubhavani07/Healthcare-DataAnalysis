@@ -5,15 +5,15 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 from mlxtend.frequent_patterns import apriori, association_rules
 
-# Load the dataset
+
 file_path = '/Users/chandukamma/Downloads/e555babb-3e1e-47b0-86c1-b0053de4a691.csv'
 df = pd.read_csv(file_path)
 
-# Display the first few rows and columns
+
 print(df.head())
 print(df.columns)
 
-# Handle missing values with forward fill method
+
 df.ffill(inplace=True)
 
 # Visualize Data
